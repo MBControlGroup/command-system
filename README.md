@@ -1,5 +1,7 @@
 # 专业技术兵员精准动员实时指挥系统
 
+**需求文档**和**图片**可在`/design_docs`中看到
+
 ## 需求文档
 
 https://github.com/MBControlGroup/command-system/blob/master/design_docs/requirements-analysis.docx
