@@ -6,6 +6,14 @@
 
 ![用例图](https://raw.githubusercontent.com/MBControlGroup/command-system/master/design_docs/usecase.png)
 
+## 管理端原型
+
+https://2njuqd.axshare.com/#g=1&p=登录
+
+## 小程序端原型
+
+https://modao.cc/app/9KNjMcOJs03gnrgyfRhmxdM7LAljs7Q
+
 ## 数据库表
 
 (数据库表待上传)
