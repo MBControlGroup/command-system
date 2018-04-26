@@ -6,8 +6,6 @@ https://github.com/MBControlGroup/command-system/blob/master/design_docs/require
 
 ## 用例图
 
-待修改
-
 ![用例图](https://raw.githubusercontent.com/MBControlGroup/command-system/master/design_docs/usecase.png)
 
 ## 管理端原型
@@ -20,10 +18,10 @@ https://modao.cc/app/9KNjMcOJs03gnrgyfRhmxdM7LAljs7Q
 
 ## 数据库表
 
-(数据库表待上传)
-
-链接：
+数据库表链接：
 https://docs.qq.com/sheet/BqI21X2yZIht1OeHzN4IrNKM2LZciQ4P11Qd4rnIMT4aCLK84 
+
+表的关系图：
 
 ![数据库表关系](https://raw.githubusercontent.com/MBControlGroup/command-system/master/design_docs/tableRelationships.png)
 
