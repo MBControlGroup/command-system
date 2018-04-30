@@ -26,7 +26,17 @@ https://docs.qq.com/sheet/BqI21X2yZIht1OeHzN4IrNKM2LZciQ4P11Qd4rnIMT4aCLK84
 
 表的关系图：
 
-![数据库表关系](./design_docs/tableRelationships.png)
+### 人事管理
+
+![](./design_docs/db/org_architecture.png)
+
+### 任务管理
+
+![](./design_docs/db/task.png)
+
+### 消息管理
+
+![](./design_docs/db/notification.png)
 
 ## 架构图
 
