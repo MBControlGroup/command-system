@@ -27,6 +27,8 @@
 
 ### 表的关系图
 
+**（注意！由于数据库表较多，下面每张图只展示了其对应功能模块直接相关的数据库表，但是表之间的关联仍然存在。）**
+
 #### 人事管理
 
 ![org_architecture](./design_docs/db/org_architecture.png)
