@@ -1,0 +1,145 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# pmcs
+
+民兵指挥系统——服务端API设计初稿
+
+JSON格式暂时待定
+
+## 用户 [/user]
+
+### 登录 [POST]
++ Request (application/json)
+
+        {
+            "username": "test",
+            "password": "test"
+        }
+
++ Response 202 (text/html)
+
+    + Headers
+
+            Location: /homepage
+
+    + Body
+
+            这是主页
+            
+## 任务 [/task]
+
+### 发布任务 [POST]
++ Request (application/json)
+
+        {
+        }
+
++ Response 202 (text/html)
+
+    + Body
+
+            发布成功
+
+
+### 执行中的任务 [/task/working]
+
+#### 查看执行中的任务 [GET]
++ Response 200 (text/html)
+
+    + Body
+
+            执行中的任务
+
+
+#### 宣布任务完成 [POST]
++ Request (application/json)
+
+        {
+        }
+
++ Response 202 (text/html)
+
+    + Body
+
+            任务已完成
+
+## 通知 [/notification]
+
+### 查看通知 [GET]
++ Response 200 (text/html)
+
+    + Body
+
+            最近的通知
+            
+### 发布通知 [POST]
++ Request (application/json)
+
+        {
+        }
+
++ Response 202 (text/html)
+
+    + Body
+
+            发布成功
+
+## 人员数据 [/people]
+
+### 查看人员 [GET]
++ Response 200 (text/html)
+
+    + Body
+
+            人员列表
+            
+### 编辑人员 [POST]
++ Request (application/json)
+
+        {
+        }
+
++ Response 202 (text/html)
+
+    + Body
+
+            编辑成功
+
+### Excel版人员数据 [/people/excel]
+这个怎么弄？
+#### 导出Excel文件 [GET]
++ Response 200 (pplication/vnd.ms-excel)
+            
+#### 导入Excel文件 [POST]
+
++ Request (pplication/vnd.ms-excel)
+
+        {
+        }
+
++ Response 202 (text/html)
+
+    + Body
+
+            导入成功
+
+## 地理信息 [/gis]
+这个怎么弄？
+### 获取地理位置 [GET]
++ Response 200 (text/html)
+
+    + Body
+
+            地图
+            
+### 上传地理位置 [POST]
++ Request (application/json)
+
+        {
+        }
+
++ Response 202 (text/html)
+
+## 即时消息 [/message]
+websocket具体怎么弄？
