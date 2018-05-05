@@ -31,13 +31,33 @@
 
 #### 人事管理
 
+##### 注意事项
+
+- 添加管理员（Admin）或民兵（Soldier）时，需要先添加即时通讯用户（IMUser）
+- 添加民兵、组织、机关时需要相应添加上下级关系条目
+
+##### 关系图
+
 ![org_architecture](./design_docs/db/org_architecture.png)
 
 #### 任务管理
 
+##### 注意事项
+
+- 添加任务（Task）时，如果使用新的地点，需要插入新的Place条目，并且将Place加到发布者所在组织或机关的常用地址列表中
+- 使用TaskAcceptOrgs和TaskAcceptOffices记录对组织和机关的任务，但无论是针对机关、组织还是个人的任务，最后执行任务都是民兵，所以发布任务**都需要**采用GatherNotification来进行细化到个人的任务记录
+
+##### 关系图
+
 ![task](./design_docs/db/task.png)
 
 #### 消息管理
+
+##### 注意事项
+
+- 使用BcMsgOrgs和BcMsgOffices记录对组织和机关发布的消息，但无论是针对机关、组织还是个人的通知，最后接收通知都是民兵，所以发布消息**都需要**采用CommonNotifications来进行细化到个人的消息记录
+
+##### 关系图
 
 ![notification](./design_docs/db/notification.png)
 
