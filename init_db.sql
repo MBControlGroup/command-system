@@ -383,6 +383,7 @@ CREATE TABLE IF NOT EXISTS BroadcastMessages (
     bm_id INT UNSIGNED AUTO_INCREMENT,
     title VARCHAR(60) NOT NULL,
     detail VARCHAR(500),
+    send_time DATETIME NOT NULL,
     bm_type ENUM('GT', 'RM', 'CN') NOT NULL,
     wechat_notice BIT NOT NULL,
     sms_notice BIT NOT NULL,
